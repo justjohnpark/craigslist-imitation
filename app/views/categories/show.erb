@@ -1,0 +1,17 @@
+<div class="page-header text-center">
+  <h1>Categories <small><%= @category.name %></small></h1>
+</div>
+
+<% if @article %>
+  <%= erb :"articles/new_form" %>
+<% end %>
+
+<ul class="list-group">
+  <% if !@article %>
+    <a href="/categories/<%= @category.id %>/articles/new" class='btn btn-success'><span class='glyphicon glyphicon-plus'></span></a>
+  <% end %>
+
+  <% @articles.each do |article| %>
+    <a href='/articles/<%= article.id %>'><li class="list-group-item text-center"><%= article.title %></li></a>
+  <% end %>
+</ul>

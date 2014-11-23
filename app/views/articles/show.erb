@@ -1,0 +1,8 @@
+<div class="page-header text-center">
+  <h1><%= @article.title %> <small><%= @article.category.name %></small></h1>
+</div>
+
+<img src='<%= @article.link_to_image %>' class='img-responsive'/>
+<h2 class='text-center'>$<%= @article.price_in_dollars %></h2>
+<h4>DESCRIPTION:</h4> <%= @article.description %>
+

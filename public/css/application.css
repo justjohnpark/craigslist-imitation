@@ -1,0 +1,29 @@
+#content {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+th {
+  text-align: left;
+}
+.list-group-item {
+  margin-top: 5px;
+}
+.home-btn {
+  display: inline-block;
+}
+#home-nav {
+  margin-top: 50px;
+  text-align: center;
+}
+.form-control {
+  margin-top: 10px;
+}
+.btn {
+  margin-top: 10px;
+}
+ul {
+  margin-top: 30px;
+}
+#edit-article {
+  margin-top: 50px;
+}

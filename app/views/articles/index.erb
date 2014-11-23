@@ -1,0 +1,11 @@
+<h1 class='text-center'>Articles</h1>
+
+<ul class="list-group">
+  <% @articles.each do |article| %>
+    <li class='list-group-item text-center'>
+      <a href='/categories/<%= article.category.id %>/articles'><%= article.category.name.upcase %></a> 
+      <a href='/articles/<%= article.id %>'><%= article.title %></a>
+      ($<%= article.price_in_dollars %>)
+    </li>
+  <% end %>
+</ul>

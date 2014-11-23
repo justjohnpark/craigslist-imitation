@@ -1,0 +1,8 @@
+<form action='/categories/<%= @category.id %>/articles/new' method='POST'>
+  <input class='form-control' name="article[owner_email]" placeholder="email">
+  <input class='form-control' name="article[title]" placeholder="title">
+  <input class='form-control' name="article[price_in_dollars]" placeholder="price (in dollars)">
+  <input class='form-control' name="article[link_to_image]" placeholder="image link">
+  <input class='form-control' name="article[description]" placeholder="description">
+  <div class='text-center'><input class='btn btn-primary' type="submit" value="create article"></div>
+</form>

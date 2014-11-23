@@ -1,0 +1,18 @@
+<form id='edit-article' action="/articles/<%= @article.id %>" method="POST">
+  <p>title: <input class='form-control' name="article[title]" value="<%= @article.title %>"></p>
+  <p>image link: <input class='form-control' name="article[link_to_image]" value="<%= @article.link_to_image %>"></p>
+  <p>price: $<input class='form-control' name="article[price_in_dollars]" value=<%= @article.price_in_dollars %>></p>
+  <p>description: <textarea class='form-control' name='article[description]' cols='80' rows='5' form="edit-article"><%= @article.description %></textarea></p>
+
+  <input type="hidden" name="_method" value="put">
+  <input type="submit" class='btn btn-primary' value='update'>
+</form>
+
+<!-- 
+<form action="/articles/<%= @article.id %>" method="POST">
+  <input class='form-control' name="confirmation" value="enter editor_key to confirm deletion">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" class='btn btn-danger' value='delete'>
+</form> -->
+
+<a href='/articles/<%= @article.id %>/delete' class='btn btn-danger'>delete</a>

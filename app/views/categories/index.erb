@@ -1,0 +1,7 @@
+<h1 class='text-center'>Categories</h1>
+
+<ul class="list-group">
+  <% @categories.each do |category| %>
+    <a href="/categories/<%= category.id %>/articles"><li class="list-group-item text-center"><%= category.name %> (<%= category.articles.length %> articles)</li></a>
+  <% end %>
+</ul>
