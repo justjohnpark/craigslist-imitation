@@ -1,4 +1,6 @@
-###Up and Running
+#A Simple Craiglist Imitation Using Sinatra
+
+##Instructions
 * clone this directory
 * run 'bundle install' in the terminal from the root directory
 * run 'be rake db:create' in the terminal from the root directory
